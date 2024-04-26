@@ -1,3 +1,6 @@
+void wifi_begin;
+
+
 void wifi_begin()
 {
   int tentative = 0;

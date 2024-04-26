@@ -1,12 +1,12 @@
-#include <Servo.h>
+#include "Arduino.h"
 
-#include <WiFi.h>
-#include <WiFiClient.h>
-#include <WebServer.h>
-#include <ESPmDNS.h>
-#include <Update.h>
-#include <WiFiMulti.h>
-#include <SPIFFS.h>
+#include "WiFi.h"
+#include "WiFiClient.h"
+#include "WebServer.h"
+#include "ESPmDNS.h"
+#include "Update.h"
+#include "WiFiMulti.h"
+#include "SPIFFS.h"
 
 #define TFT_CS 15
 #define TFT_DC 2
@@ -50,7 +50,7 @@ void setup(void)
   //wifiMulti.addAP("ssid", "mdp");
 
   wifi_begin();
-  
+
   display_begin();
   pins_begin();
   //ledcSetup(0, 5000, 8);
